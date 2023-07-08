@@ -1,0 +1,68 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Primer proyecto node.js",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev \"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin images/* --out-dir dist/images",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin prices.html -d dist --htmlmin -o dist/prices.html && usemin contact.html -d dist --htmlmin -o dist/contact.html",
+    "build": "npm run clean && npm run scss npm run imagemin && npm run usemin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://pmisas@bitbucket.org/pmisas/guia-hoteles.git"
+  },
+  "author": "Paula Carolina Misas Marin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/pmisas/guia-hoteles/issues"
+  },
+  "homepage": "https://bitbucket.org/pmisas/guia-hoteles#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "copyfiles": "^2.4.1",
+    "cssmin": "^0.4.3",
+    "del": "^7.0.0",
+    "grunt": "^1.6.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^4.0.0",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-filerev": "^2.3.1",
+    "grunt-usemin": "^3.1.1",
+    "htmlmin": "^0.0.7",
+    "jit-grunt": "^0.10.0",
+    "lite-server": "^2.6.1",
+    "node-sass": "^8.0.0",
+    "onchange": "^7.1.0",
+    "rimraf": "^4.1.2",
+    "sass": "^1.57.1",
+    "time-grunt": "^2.0.0",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "concurrently": "^7.6.0",
+    "firebase": "^10.0.0",
+    "flaticon": "^0.1.0",
+    "font-awesome": "^4.7.0",
+    "grunt-cli": "^1.4.3",
+    "grunt-sass": "^3.1.0",
+    "imagemin": "^8.0.1",
+    "jquery": "^3.6.3",
+    "popper.js": "^1.16.1",
+    "ruby": "^0.6.1"
+  }
+}

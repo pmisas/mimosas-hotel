@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- build:css css/index.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/dac8c9ae49.js" crossorigin="anonymous"></script> 
+    <!-- endbuild -->
+
+    <!--Links-->
+
+    <title>Hotel Mimosa</title>
+  </head>
+  <body>
+    <!-- Barra Menu y Foticos <3 -->
+      <header class="sticky-top">
+        <div class="headersup ">
+          <div class="logo">
+            <img src="images/menu.logo.jpg" alt="">
+          </div>
+          <div class="search">
+            <input type="search" placeholder="Buscar">
+          </div>
+        </div>
+        <div class="container_menu ">
+          <div id="botones">
+            <input type="checkbox" id="checkmenu" onclick="mostrar()">
+              <label id="labelcheck" for="checkmenu" >
+                <i class="fa-solid fa-bars iconmenu"></i>
+              </label>
+              <input type="checkbox" id="checkmenu1" onclick="ocultar()">
+            <div class="menu">
+              <label id="labelcheck1" for="checkmenu1">
+                <i class="fa-solid fa-bars iconmenu"></i>
+              </label>
+          </div>
+          <div id="menu">
+            <nav >
+              <ul>
+                <li><a href="/index.html" id="selected"></a></li>
+                <!--
+                  <li><a href="#">Reservar</a>
+                  <ul>
+                    <li><a href="#">Bogota</a></li>
+                    <li><a href="#">Medellin</a></li>
+                    <li><a href="#">Cali</a></li>
+                    <li><a href="#">Guatape</a></li>
+                    <li><a href="#">San Andres</a></li>
+                    <li><a href="#">Cartagena</a></li>
+                  </ul>
+                </li>
+                -->
+                
+                <li><a href="/prices.html">Precios</a></li>
+                <li><a href="/contact.html">About & Contact</a></li>
+              </ul>
+            </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    <main>
+      <article>
+        <img src="images/inicio.playa.jpg" class="d-block w-100" alt="holaaa">
+              
+
+          <!-- jumbotron -->
+        <div class="container1" >
+          <div class="jumbotron">
+            <div class="container-fluid text-center bg-light" style="margin-bottom: 20px;">
+              <div class="row">
+                <div class="presentacion">
+                  <h class="display-4">Hoteles Mimosa</h>
+                  <hr class="my-4">
+                  <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/promociones.socios.png" class="d-block w-100" alt="holaaa">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/promociones.pet.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/promociones.colombia.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/promociones.danza.png"class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <p style="font-size: small; margin-top: 20px; ">Este es tu lugar ideal para viajar a los lugares mas turisticos e importantes de colombia</p>
+
+                </div>
+              
+                <div class="presentacion">
+                  <p style="font-size: small;">Aun no estas decidido en que lugar quieres pasar tus vacaciones? dale click y mirara mas sobre nuestros destinos aqui podras Ver
+                    nuestras habitaciones y otros servicios, arriba tienes un menu para que conocas mas sobre 
+                    Nosotros.<br>
+                    <br>
+                    El hotel Mimosa tiene desde las habitaciones mas secillas hasta las mas elegantes, si tienes una mascota no te preocupes
+                    porque aqui no nos molesta, uno de nuestros servicios en guarderia de mascotas para que dejes a tu mascota en las mejores manos.<br>
+                    <br>
+                    Contamos con otros servicios como tour en la ciudad que decidas alojarte, piscinas, bares, restaurante tipo buffet y hasta tenemos una 
+                    sala de billar, Este hotel fundado en medellin tiene lo mejor para ti y te esta esperando. Reserva tu habitacion.</p>
+
+                    <a id="comentar" type="button" class="btn btn-reserva btn-outline-info" style="font-weight: bold;" data-bs-toggle="modal" data-bs-target="#comenta"> Dejar Comentarios</a>
+                    
+                    <button class="btn btn-light boton-membresia " data-bs-toggle="collapse" data-bs-target="#socios" aria-controls="multicollapse1">
+                      <div class="icono">
+                        <img src="images/inicio.membresia.png" alt="">
+                      </div>
+                      <div class="texto">
+                        <h5>Membresia Mimosa</h5>
+                        <p>Conoce la membresia y se parte de los beneficios</p>
+                      </div>
+                    </button>
+
+                </div>
+              </div>
+              </div>
+              <div class="presentacion collapse multi-collapse" id="socios">
+                <img id="img-socios" src="images/inicio.viaje.jpg" class="d-block w-100" alt="">
+                <div class="cards-socios">
+                  <div class="row">
+                    <div class="col">
+                      <div class="container-socios">
+                        <hh>Privilegios en hoteles Mimosa</hh>
+                        <p>Tendras descuentos extra en todos los servicios y hospedajes del hotel. Ademas podras entrar a lugares exclusivos</p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="container-socios">
+                        <hh>Tenemos muchos convenios</hh>
+                        <p>nuestro hotel tiene aliados por todo el mundo puedes viajar a todas partes ahorrando mucho.</p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="container-socios">
+                        <hh>Seremos incribles socios</hh>
+                        <p>Comprando tu membresia tienes derecho a pasar 4 semanas en cualquiera de los hoteles que elijas totalmente gratis. </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div id="carouselExampleControls1" class="carousel carousel-socios"  data-bs-ride="carousel" style="top: -40px;">
+                  <div class="carousel-inner" id="cards-socios">
+                      <div class="carousel-item active">
+                        <div class="container-socios">
+                          <hh style="font-size: 15px;">Privilegios en hoteles Mimosa</hh>
+                          <p>Tendras descuentos extra en todos los servicios y hospedajes del hotel. Ademas podras entrar a lugares exclusivos</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="container-socios">
+                          <hh>Tenemos muchos convenios</hh>
+                          <p>nuestro hotel tiene aliados por todo el mundo puedes viajar a todas partes ahorrando mucho.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="container-socios">
+                          <hh>Seremos incribles socios</hh>
+                          <p>Comprando tu membresia tienes derecho a pasar 4 semanas en cualquiera de los hoteles que elijas totalmente gratis. </p>
+                        </div>  
+                      </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+
+                <div class="container-invitacion bg-light">
+                  <hh>Membresias Mimosa</hh>
+                  <p>En hoteles Mimosa creemos que te gusta viajar tanto como a nosotros. Si disfrutas al maximo tus vacaciones junto con tu
+                    familia, las membresias mimosa son ideales, estas te van a permitir sacarle el maximo provecho a tus dias de descanso.
+                    Por eso tenemos esta invitacion para ti. Adquiere la membresia mimosa y se parte de los beneficios de viajar con nosotros.
+                  </p>
+
+                </div>
+              </div>
+              
+            </div> 
+          </div> 
+        </div>
+        
+        
+
+      <div class="ciudades-card">
+        <div class="card bg-light bg-opacity-25">
+          <img src="images/reservas.bogota.jpg" class="img-fluid">
+          <h data-bs-toggle="tooltip" data-placement="top" title="Las primeras reservas vienen con clases de danza gratis.">BOGOTA</h>
+          <p  style="font-weight: normal;">Disfruta tu estadia en la capita de Colombia. Arpovecha nuestras ofertas por tiempo limitado!</p>
+          <a type="button" class="btn btn-reserva" style="font-weight: bold;">RESERVAR</a>
+        </div>
+        <div class="card bg-light bg-opacity-25">
+          <img src="images/reservas.cali.jpg" class="img-fluid">
+          <h data-bs-toggle="tooltip" data-placement="top" title="Las primeras reservas vienen con clases de danza gratis.">CALI</h>
+          <p  style="font-weight: normal;">Conoce lo que es el sabor, ven y realiza tu reserva ya y disfruta de la salsa y la rumba en Cali.</p>
+          <a type="button" class="btn btn-reserva" style="font-weight: bold;">RESERVAR</a>
+        </div>
+        <div class="card bg-light bg-opacity-25">
+          <img src="images/reservas.medellin.jpg" class="img-fluid">
+          <h data-bs-toggle="tooltip" data-placement="top" title="Las primeras reservas vienen con clases de danza gratis.">MEDELLIN</h>
+          <p  style="font-weight: normal;">Te esperamos en la ciudad de la eterna primavera, tenemos sitios turisticos que seguro te gustará.</p>
+          <a type="button" class="btn  btn-reserva" style="font-weight: bold;">RESERVAR</a>
+        </div>
+        <div class="card bg-light bg-opacity-25">
+          <img src="images/reservas.san.jpg" class="img-fluid">
+          <h data-bs-toggle="tooltip" data-placement="top" title="Las primeras reservas vienen con clases de danza gratis.">SAN ANDRES</h>
+          <p  style="font-weight: normal;">Ven y conoce la cultura san andresana, esta isla te espera con los mejores lugares para practicar buceo</p>
+          <a type="button" class="btn  btn-reserva" style="font-weight: bold;">RESERVAR</a>
+        </div>
+        <div class="card bg-light bg-opacity-25">
+          <img src="images/reservas.guatape.jpg" class="img-fluid">
+          <h data-bs-toggle="tooltip" data-placement="top" title="las primeras reservas vienen con clases de danza gratis.">GUATAPE</h>
+          <p  style="font-weight: normal;">Este lugar tiene miles de historia que seguro te van a gustar, Aqui está la piedra del peñol, te esperamos.</p>
+          <a type="button" class="btn btn-reserva" style="font-weight: bold;">RESERVAR</a>
+        </div>
+        <div class="card bg-light bg-opacity-25">
+          <img src="images/reservas.cartagena.jpg" class="img-fluid">
+          <h data-bs-toggle="tooltips" data-placement="top" title="Las primeras reservas vienen con clases de danza gratis.">CARTAGENA</h>
+          <p  style="font-weight: normal;">Tenemos los mejores hoteles para que visites los detinos mas bellos de America latina. Conocenos.</p>
+          <a type="button" class="btn btn-reserva" style="font-weight: bold;">RESERVAR</a>
+        </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="comenta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Consulta sobre tu membresia</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="border-color: #0000; background-color: #fff; font-size: 20px;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="color: black; font-size: small;">
+        <div class="row">
+          <div class="col-sm-6 text-center form-comentario">
+              <p>Nombre</p>
+              <div class="input-group date">
+                  <span class="input-group-text bg-white">
+                      <i class="fa-regular fa-id-badge"></i>
+                  </span>
+                  <input type="text" class="form-control" placeholder="Juanito Perez">
+                  <span class="input-group-append">
+                  </span>
+              </div>
+          </div>
+          
+          <div class="col-sm-6 text-center form-comentario">
+            <p>Email</p>
+            <div class="input-group date">
+                <span class="input-group-text bg-white">
+                    <i class="fa-solid fa-envelope"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="ejemplo@gmail.com">
+                <span class="input-group-append">
+                </span>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col form-comentario">
+            <p style="text-align: left;">Dejanos un comentario:</p>
+            <textarea class="form-control" rows="6"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </article>
+    </main>   
+    
+    <!-- FOOTER -->
+    <footer>
+      <br>
+      <div class="container-fluid py-4 bg-light">
+        <div class="row">
+            <div class="col-lg-5 col-md-2  d-flex flex-column">
+                <h5 class="h1 text-dark ">Contact.</h5>
+                <p class="small text-muted mb-0 "> Puedes contactarnos en los siguientes enlaces y paginas.</p>
+                <p class="small text-muted mb-0 ">&copy; Copyrights. All rights reserved.</p>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 d-flex flex-column">
+                <h5 class="text-dark mb-3 ">Quick links</h5>
+                <ul class="list-unstyled text-muted ">
+                  <li>
+                    <div style="display: flex">
+                      <i class="fa-brands fa-facebook"></i>
+                      <a style="margin-left: 10px;" href="https://www.facebook.com/misas.paula/">Facebook</a>
+                    </div>
+                </li>
+                    <li>
+                        <div style="display: flex">
+                          <i class="fa-brands fa-twitter"></i>
+                          <a style="margin-left: 10px;" href="">Twitter</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display: flex">
+                          <i class="fa-solid fa-mobile"> </i>
+                          <p class="small" style="margin-left: 10px;">+57 3177445499</p>
+                        </div>
+                    </li>
+                    <li>
+                      <div style="display: flex">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a style="margin-left: 10px" href="pmisas@unaledu.co">pmisas@unal.edu.co</a>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6  d-flex flex-column text-left">
+                <h5 class="text-dark mb-3 ">Newsletter</h5>
+                <p class="small text text-muted">Terminos y condiciones</p>
+                <p class="small text-muted">Deja tu correo y nos pondremos en contacto.</p>
+                <form action="# ">
+                    <div class="input-group mb-3 ">
+                        <input class="form-control " type="text " placeholder="@" aria-label="Recipient's username " aria-describedby="button-addon2 ">
+                        <button class="btn btn-primary " id="button-addon2 " type="button "><i class="fas fa-paper-plane "></i></button>
+                    </div>
+                </form>
+              </div>
+          </div>
+        </div>
+    </div>
+    <br>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- endbuild -->
+
+    
+  </body>
+</html>

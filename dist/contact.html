@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="css/index.1863c9f6.css">
+
+    <!--Links-->
+
+    <title>Hotel Mimosa</title>
+  </head>
+  <body>
+    <!-- Barra Menu y Foticos <3 -->
+    <header class="sticky-top">
+      <div class="headersup ">
+        <div class="logo">
+          <img src="images/menu.logo.jpg" alt="">
+        </div>
+        <div class="search">
+          <input type="search" placeholder="Buscar">
+        </div>
+      </div>
+      <div class="container_menu ">
+        <div id="botones">
+          <input type="checkbox" id="checkmenu" onclick="mostrar()">
+            <label id="labelcheck" for="checkmenu" >
+              <i class="fa-solid fa-bars iconmenu"></i>
+            </label>
+            <input type="checkbox" id="checkmenu1" onclick="ocultar()">
+          <div class="menu">
+            <label id="labelcheck1" for="checkmenu1">
+              <i class="fa-solid fa-bars iconmenu"></i>
+            </label>
+        </div>
+        <div id="menu">
+          <nav >
+            <ul>
+              <li><a href="/index.html"></a></li>
+              <li><a href="#">Reservar</a>
+
+                <ul>
+                  <li><a href="#">Bogota</a></li>
+                  <li><a href="#">Medellin</a></li>
+                  <li><a href="#">Cali</a></li>
+                  <li><a href="#">Guatape</a></li>
+                  <li><a href="#">San Andres</a></li>
+                  <li><a href="#">Cartagena</a></li>
+                </ul>
+              </li>
+              <li><a href="/prices.html">Precios</a></li>
+              <li><a href="/contact.html" id="selected">About & Contact</a></li>
+            </ul>
+          </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+
+        <div class="container text-dark text-left">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col" id="about">
+                          <div class="about-card">
+                            <div class="card" style="background-color: #252440;">
+                              <img src="images/about.cedulamimosa.png" class="img-fluid">
+                              <div class="body-cardabout">
+                                <h style="color: white;">Mimosa Misas</h>
+                                <p  style="font-weight: normal; color: white;">El nombre de la pagina hotelera se llama hoteles mimosa por ser el nombre de la gata de mi casa y la que mientras estuve haciendo
+                                  el proyecto salió de la casa y se perdió.</p>
+                              </div>
+                              </div>
+                              <div class="card" style="background-color: #252440;">
+                              <img src="images/about.paula.png" class="img-fluid">
+                              <div class="body-cardabout">
+                                <h style="color: white;">Paula Misas</h>
+                                <p  style="font-weight: normal; color: white;">Paula Carolina Misas Marin, actualmente tengo 22 años y vivo 
+                                  en Medellin, Colombia. Estudio ingenieria de sistemas en la Universidad Nacional de Colombia.</p>
+                              </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+        </div>
+
+        <div class="container text-center carrusel" style="padding-bottom: 30px;">
+            <br>
+            <div class="container bg-light text-dark text-left" id="fotos">
+                <br>
+                <h style="font-size: 20px; color: black;"> Ponte en contacto con nostros y dejanos un mensaje.</h>
+                <br>
+                <br>
+                <div class="row" id="form">
+                    <div class="col-sm-4 text-center">
+                        <p>Nombre</p>
+                        <div class="input-group date">
+                            <span class="input-group-text bg-white">
+                                <i class="fa-regular fa-id-badge"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Juanito">
+                            <span class="input-group-append">
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4 text-center">
+                        <p>Apellidos</p>
+                        <div class="input-group date">
+                            <span class="input-group-text bg-white">
+                                <i class="fa-solid fa-fingerprint"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Lopez Perez">
+                            <span class="input-group-append">
+                            </span>
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-4 text-center">
+                        <p>Email</p>
+                        <div class="input-group date">
+                            <span class="input-group-text bg-white">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="ejemplo@gmail.com">
+                            <span class="input-group-append">
+                            </span>
+                        </div>
+                    </div>
+    
+                </div>
+
+
+                <div class="row" id="form">
+                    
+                    <div class="col-sm-4 text-center">
+                        <p>Telefono</p>
+                        <div class="input-group date">
+                            <span class="input-group-text bg-white">
+                                <i class="fa-solid fa-mobile"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="ej: +57 3199875">
+                            <span class="input-group-append">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 text-center">
+                      <div class="form-group">
+                        <p>Pais</p>
+                        <div class="input-group child">
+                            <span class="input-group-text bg-white">
+                              <i class="fa-solid fa-city"></i>
+                            </span>
+                            <span class="input-group-append">
+                            </span>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option><p>Argentina</p></option>
+                                <option><p>Chile</p></option>
+                                <option><p>Colombia</option>
+                                <option><p>Ecuador</p></option>
+                                <option><p>España</p></option>
+                                <option><p>Mexico</p></option>
+                                <option><p>United States</p></option>
+                                <option><p>Venezezuela</p></option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="col-sm-4 text-center">
+                        <p>Dirección</p>
+                        <div class="input-group date">
+                            <span class="input-group-text bg-white">
+                              <i class="fa-solid fa-house"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="">
+                            <span class="input-group-append">
+                            </span>
+                        </div>
+                    </div> 
+                </div>
+
+
+                <div class="row" id="form">
+                    <div class="col">
+                        <p style="text-align: left;">Dejanos un comentario:</p>
+                        <textarea class="form-control" rows="6"></textarea>
+                    </div>
+                </div>
+
+                <div class="row" id="check">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" for="gridCheck">
+                                <label class="form-check-label"  for="gridCheck">Quiero que me contacten.</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="btn btn-light btn-outline-dark btn-lg btnform" href="/" role="button">Enviar</a>
+    
+            </div>
+        </div>
+
+        
+
+      </article>
+    </main>   
+    
+    <!-- FOOTER -->
+    <footer>
+      <br>
+      <div class="container-fluid py-4 bg-light">
+        <div class="row">
+            <div class="col-lg-5 col-md-2  d-flex flex-column">
+                <h5 class="h1 text-dark ">Contact.</h5>
+                <p class="small text-muted mb-0 "> Puedes contactarnos en los siguientes enlaces y paginas.</p>
+                <p class="small text-muted mb-0 ">&copy; Copyrights. All rights reserved.</p>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 d-flex flex-column">
+                <h5 class="text-dark mb-3 ">Quick links</h5>
+                <ul class="list-unstyled text-muted ">
+                  <li>
+                    <div style="display: flex">
+                      <i class="fa-brands fa-facebook"></i>
+                      <a style="margin-left: 10px;" href="https://www.facebook.com/misas.paula/">Facebook</a>
+                    </div>
+                </li>
+                    <li>
+                        <div style="display: flex">
+                          <i class="fa-brands fa-twitter"></i>
+                          <a style="margin-left: 10px;" href="https://twitter.com/CoirisElar">Twitter</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display: flex">
+                          <i class="fa-solid fa-mobile"> </i>
+                          <p class="small" style="margin-left: 10px;">+57 3177445499</p>
+                        </div>
+                    </li>
+                    <li>
+                      <div style="display: flex">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a style="margin-left: 10px" href="pmisas@unaledu.co">pmisas@unal.edu.co</a>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6  d-flex flex-column text-left">
+                <h5 class="text-dark mb-3 ">Newsletter</h5>
+                <p class="small text text-muted">Terminos y condiciones</p>
+                <p class="small text-muted">Deja tu correo y nos pondremos en contacto.</p>
+                <form action="# ">
+                    <div class="input-group mb-3 ">
+                        <input class="form-control " type="text " placeholder="@" aria-label="Recipient's username " aria-describedby="button-addon2 ">
+                        <button class="btn btn-primary " id="button-addon2 " type="button "><i class="fas fa-paper-plane "></i></button>
+                    </div>
+                </form>
+              </div>
+          </div>
+        </div>
+    </div>
+    <br>
+    </footer>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="js/main.3eb66e95.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,1265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- build:css css/index.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/dac8c9ae49.js" crossorigin="anonymous"></script> 
+     <!-- endbuild -->
+
+    <!--Links-->
+
+    <title>Hotel Mimosa</title>
+  </head>
+  <body>
+    <!-- Barra Menu y Foticos <3 -->
+    <header class="sticky-top">
+      <div class="headersup ">
+        <div class="logo">
+          <img src="images/menu.logo.jpg" alt="">
+        </div>
+        <div class="search">
+          <input type="search" placeholder="Buscar">
+        </div>
+      </div>
+      <div class="container_menu ">
+        <div id="botones">
+          <input type="checkbox" id="checkmenu" onclick="mostrar()">
+            <label id="labelcheck" for="checkmenu" >
+              <i class="fa-solid fa-bars iconmenu"></i>
+            </label>
+            <input type="checkbox" id="checkmenu1" onclick="ocultar()">
+          <div class="menu">
+            <label id="labelcheck1" for="checkmenu1">
+              <i class="fa-solid fa-bars iconmenu"></i>
+            </label>
+        </div>
+        <div id="menu">
+          <nav >
+            <ul>
+              <li><a href="/index.html"></a></li>
+              <!--
+                <li><a href="#">Reservar</a>  
+                <ul>
+                  <li><a href="#">Bogota</a></li>
+                  <li><a href="#">Medellin</a></li>
+                  <li><a href="#">Cali</a></li>
+                  <li><a href="#">Guatape</a></li>
+                  <li><a href="#">San Andres</a></li>
+                  <li><a href="#">Cartagena</a></li>
+                </ul>
+              </li>
+              -->
+              
+              <li><a href="/prices.html" id="selected">Precios</a></li>
+              <li><a href="/contact.html">About & Contact</a></li>
+            </ul>
+          </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+
+            <!-- Nav tabs -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="precios">
+    <button class="nav-link active" id="habitaciones-tab" data-bs-toggle="tab" data-bs-target="#habitaciones" type="button" role="tab" aria-controls="home" aria-selected="true" style="color: #000;">Habitaciones</button>
+  </li>
+  <li class="nav-item" role="precios">
+    <button class="nav-link" id="servicios-tab" data-bs-toggle="tab" data-bs-target="#servicios" type="button" role="tab" aria-controls="profile" aria-selected="false" style="color: #000;">Servicios</button>
+  </li>
+  <li class="nav-item" role="precios">
+    <button class="nav-link" id="membresias-tab" data-bs-toggle="tab" data-bs-target="#membresias" type="button" role="tab" aria-controls="messages" aria-selected="false" style="color: #000;">Membresias (Proximamente)</button>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="habitaciones" role="tabpanel" aria-labelledby="habitaciones-tab">
+
+    <div id="#habitaciones" class="container-fluid bg-light" style="padding: 0px 0px 0px 0px; top: 0px;" role="tabpanel">
+      <div class="jumbotron jumbotron">
+          <div class="container bg-opacity-25">
+            <hh style="font-size: 30px;">DALE UN VISTAZO A <br>NUESTRAS HABITACIONES</hh>
+            <hr class="my-4">
+            <p>
+              Contamos con un penthouse y 4 tipos de habitaciones  ideal para que encuentres la que mas se acomode a ti. Tenemos desde las habitaciones mas sencillas
+              hasta las habitaciones mas lujosas que puedas encontrar, te garantizamos que cualquier habitacion que elijas te va a encantar. 
+              Todas nuestras habitaciones cuentan con: 
+              <div class="row">
+                  <div class="col">
+                      <p>
+                          -Cama <br>
+                          -Minibar   <br>
+                          -Agua caliente   <br>
+                          -Telefono     <br>
+                          -Baño         <br>
+                          -Aire acondicionado
+                      </p>
+
+                  </div>
+                  <div class="col">
+                      <p>
+                          -Caja de seguridad    <br>
+                          -Minibar        <br>
+                          -Secador       <br>
+                          -Wifi       <br>
+                          -TV     <br>
+                  </div>
+              </div>
+              <p>
+              Así que por estas cosas no te tienes que preocupar!<br>
+              Queremos hacer tu estadia cada vez mas agradable.
+            </p>
+          </div>
+      </div>
+    
+
+      <div class="container-fluid" style="background-color: #1b1a30;" >
+        <div class="row text-ligh">
+          <div class="col" id="tablas">
+            <h style="color: rgb(255, 255, 255);">TEMPORADA ALTA</h>
+
+            <div class="table-responsive">
+              <table class="table table-striped table-dark">
+                <thead>
+                  <th>Ciudad</th>
+                  <th>Penthouse</th>
+                  <th>Premium</th>
+                  <th>Junior</th>
+                  <th>Doble</th>
+                  <th>Sencilla</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Bogotá</td>
+                    <td>$1250 USD</td>
+                    <td>$800 USD</td>
+                    <td>$750 USD</td>
+                    <td>$450 USD</td>
+                    <td>$270 USD</td>
+                  </tr>
+                  <tr>
+                    <td>Cali</td>
+                    <td>$850 USD</td>
+                    <td>$500 USD</td>
+                    <td>$300 USD</td>
+                    <td>$130 USD</td>
+                    <td>$80 USD</td>
+                  </tr>
+                  <tr>
+                    <td>Medellin</td>
+                    <td>$850 USD</td>
+                    <td>$500 USD</td>
+                    <td>$400 USD</td>
+                    <td>$200 USD</td>
+                    <td>$100 USD</td>
+                  </tr>
+                  <tr>
+                    <td>San Andrés</td>
+                    <td>$780 USD</td>
+                    <td>$600 USD</td>
+                    <td>$580 USD</td>
+                    <td>$400 USD</td>
+                    <td>$220 USD</td>
+                  </tr>
+                  <tr>
+                    <td>Guatape</td>
+                    <td>$740 USD</td>
+                    <td>$650 USD</td>
+                    <td>$610 USD</td>
+                    <td>$300 USD</td>
+                    <td>$50 USD</td>
+                  </tr>
+                  <tr>
+                    <td>Cartagena</td>
+                    <td>$1520 USD</td>
+                    <td>$1000 USD</td>
+                    <td>$900 USD</td>
+                    <td>$500 USD</td>
+                    <td>$300 USD</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+        
+            <div class="col" id="tablas">
+              <h style="color: rgb(255, 255, 255);">TEMPORADA BAJA</h>
+              <div class="table-responsive">
+                <table class="table table-striped table-dark">
+                  <thead>
+                    <th>Ciudad</th>
+                    <th>Penthouse</th>
+                    <th>Premium</th>
+                    <th>Junior</th>
+                    <th>Doble</th>
+                    <th>Sencilla</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Bogotá</td>
+                      <td>$1000 USD</td>
+                      <td>$800 USD</td>
+                      <td>$750 USD</td>
+                      <td>$450 USD</td>
+                      <td>$270 USD</td>
+                    </tr>
+                    <tr>
+                      <td>Cali</td>
+                      <td>$700 USD</td>
+                      <td>$500 USD</td>
+                      <td>$300 USD</td>
+                      <td>$130 USD</td>
+                      <td>$80 USD</td>
+                    </tr>
+                    <tr>
+                      <td>Medellin</td>
+                      <td>$740 USD</td>
+                      <td>$500 USD</td>
+                      <td>$400 USD</td>
+                      <td>$200 USD</td>
+                      <td>$100 USD</td>
+                    </tr>
+                    <tr>
+                      <td>San Andrés</td>
+                      <td>$750 USD</td>
+                      <td>$600 USD</td>
+                      <td>$580 USD</td>
+                      <td>$400 USD</td>
+                      <td>$220 USD</td>
+                    </tr>
+                    <tr>
+                      <td>Guatape</td>
+                      <td>$680 USD</td>
+                      <td>$640 USD</td>
+                      <td>$610 USD</td>
+                      <td>$300 USD</td>
+                      <td>$50 USD</td>
+                    </tr>
+                    <tr>
+                      <td>Cartagena</td>
+                      <td>$1250 USD</td>
+                      <td>$1000 USD</td>
+                      <td>$900 USD</td>
+                      <td>$500 USD</td>
+                      <td>$300 USD</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+          </div>
+          </div>
+
+            <br>
+            <br>
+            <div class="container bg-light" id="room">
+            
+              <div class="row">
+              
+                  <div class="col-sm-7">
+                  
+                      <div id="carouselExampleControlsp" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                  <img src="images/instalaciones.penthouses.jpg" class="d-block w-100" alt="holaaa">
+                              </div>
+                              <div class="carousel-item">
+                                  <img src="images/instalaciones.penthouse.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/instalaciones.penthouseb1.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                  <img src="images/instalaciones.penthouse1.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="images/instalaciones.penthouseb.jpg" class="d-block w-100" alt="...">
+                              </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsp" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsp" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                      </div>
+                    
+                  </div>
+                
+                
+                      <div class="col">
+                          <div class="container bg-light text-black">
+                              <br>
+                              <h style="font-size: 40px">Habitacion Penthouse <br></h>
+                              <hh style="font-size: 25px">CON TRES PISOS</hh>
+                              <hr class="my-4">
+                              <p>
+                              Para 8 personas ubicada en la parte alta del hotel cuenta con 2 habitaciones y 
+                              3 camas cada una con Tv así como la sala con balcon. el mueble de la sala se puede transformar en 
+                              dos camas individuales. tambien cuenta con cocina un comedor y un baño con jardin asi como una vista 
+                              increible.
+                              <br>
+                              </p>
+                            
+                              <div class="row">
+                                  <div class="col">
+                                      <p>
+                                          -3 Camas Dobles  <br>
+                                          -Sala-comedor    <br>
+                                          -Cocina   
+                                      </p>
+                                    
+                                  </div>
+                                  <div class="col">
+                                      <p>
+                                          - 3 TV's LCD     <br>
+                                          -Terraza    <br>
+                                          -2 baños + 1 con jardin 
+                                      
+                                      </p>                           
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+              </div>
+          </div>
+          <br>
+          <br>
+          <div class="container bg-light" id="room"   >
+          
+          <div class="row">
+
+              <div class="col">
+
+                  <div class="container bg-light text-black ">
+                      <br>
+                      <h style="font-size: 45px;">Habitacion Junior</h><br>
+                      <hh style="font-size: 30px">CON SALA</hh>
+                      <hr class="my-4">
+                      <p>
+                      Esta instancia cuenta con espacio para 4 personas y esta equipada con una cama doble o dos sencillas, un sofa cama, televisor, cocina con todos los implementos, sala-comedor, y un balcon
+                      en donde podras disfrutar la hermosa vista.
+                      <br>
+                      <br>
+                      </p>
+
+                      <div class="row">
+
+
+                          <div class="col-sm-5">
+                              <p>
+                                  -Cama doble  <br>
+                                  -Sofacama    <br>
+                                  -Sala-comedor    <br>
+                              </p>
+                          </div>
+                          <div class="col">
+                              <p>
+                                  -Cocina con todo incluido       <br>
+                                  -Ducha      <br>
+                                  -Bañera
+                              </p>
+                          </div>
+
+
+                      </div>
+                  </div>
+
+              </div>
+
+              <br>  
+
+              <div class="col-sm-7">
+
+                  <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="images/instalaciones.premium.jpeg" class="d-block w-100" alt="holaaa">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="images/instalaciones.premium1.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="images/instalaciones.premium.jpg" class="d-block w-100" alt="...">
+                          </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                  </div>
+
+              </div>
+
+          </div>
+        </div>
+      
+        <br>
+        <br>
+      
+        <div class="container bg-light" id="room">
+        
+            <div class="row">
+            
+                <div class="col-sm-7">
+                
+                    <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/instalaciones.premiumm.jpg" class="d-block w-100" alt="holaaa">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/instalaciones.premiumb.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/instalaciones.jacuzzi.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                  
+                </div>
+              
+              
+                    <div class="col">
+                        <div class="container bg-light text-black">
+                            <br>
+                            <h style="font-size: 45px">Habitacion Premium <br></h>
+                            <hh style="font-size: 30px">CON JACUZZI</hh>
+                            <hr class="my-4">
+                            <p>
+                            Esta habitacion te va a encantar tiene hermosos acabados, escritorio y sala tiene un balcon con la mejor vista.
+                            comoda hasta para 5 personas, esta habitacion tambien tiene una terraza con jacuzzi, y una cocina
+                            </p>
+                          
+                            <div class="row">
+                                <div class="col">
+                                    <p>
+                                        -Cama Doble  <br>
+                                        -Escritorio    <br>
+                                        -Jacuzzi    
+                                    </p>
+                                  
+                                </div>
+                                <div class="col">
+                                    <p>
+                                        -TV LCD     <br>
+                                        -Terraza    <br>
+                                        -Cocina
+                                    
+                                    </p>                           
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+      
+        <br>
+        <br>
+      
+        <div class="container bg-light" id="room">
+        
+            <div class="row">
+            
+                <div class="col">
+                    <div class="container bg-light text-black">
+                        <br>
+                        <h style="font-size: 50px">Habitacion Doble</h><br>
+                        <hh style="font-size: 30px">CON COCINA</hh>
+                        <hr class="my-4">
+                        <p>
+                        Esta habitacion es hasta maximo 4 personas esta es una habitacion sencilla pero cuenta con cocina integrada,
+                        area de estudio, baño aire acondicionado, es un espacio medianamente amplio.
+                        <br>
+                        <br>
+                        </p>
+                      
+                        <div class="row">
+                            <div class="col">
+                                <p>
+                                    -2 camas Dobles  <br>
+                                    -Escritorio    <br>
+                                    -TV LCD     <br>
+                                </p>
+                              
+                            </div>
+                            <div class="col">
+                                <p>
+                                    -Bañera     <br>
+                                    -Ducha      <br>
+                                    -Cocina con todo incluido       <br>
+                                </p>
+                              
+                            </div>
+                        </div>
+                      </div>
+                    
+                  </div>
+
+                <div class="col-sm-7">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/instalaciones.doble.jpg" class="d-block w-100" alt="holaaa">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/instalaciones.doble1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/instalaciones.bañodoble.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                </div>
+              
+            </div>
+
+
+        </div>
+      
+        <br>
+        <br>
+      
+        <div class="container bg-light" id="room">
+        
+            <div class="row">
+            
+                <div class="col-sm-7">
+                    <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/instalaciones.habitacion0.jpg" class="d-block w-100" alt="holaaa">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/instalaciones.personal.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                </div>
+              
+              
+                <div class="col">
+                    <div class="container gb-light text-black">
+                    
+                        <br>
+                    <h style="font-size: 48px;">Habitacion Sencilla</h>
+                    <hh style="font-size: 30px">CON MININEVERA</hh>
+                    <hr class="my-4">
+                    <p>
+                    Esta es una habitacion para una o dos personas tiene 20 m y cuenta con una cama doble o dos sencillas un televisor
+                    y un armario amplio, tambien tienes una mininevera para guardar tu comida, esta es una habitacion bien iluminada con una ventana grande y también tiene una vista muy bonita.
+                    
+                    <br>
+                    <br>
+                    </p>
+                  
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                -Cama doble  <br>
+                                -Silla    <br>
+                                -Ducha      <br>
+                            </p>
+                          
+                        </div>
+                        <div class="col">
+                            <p>
+                                -TV LCD     <br>
+                                -Bañera     <br>
+                                -Mininevera
+                            </p>
+                          
+                        </div>
+                    </div>
+                  
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+      <br>
+    </div>
+    </div>
+
+  </div>
+  <div class="tab-pane" id="servicios" role="tabpanel" aria-labelledby="servicios-tab">
+    
+    <div class="container-fluid bg-light text-center">
+      <h style="color: black;">TENEMOS MUCHOS SERVICIOS QUE OFRECER</h>
+      <p style="color: black;">Los servicios que verás los encontraras en todas las ciudades, su costo dependerá de la habitación 
+          en la cual decidas hospedarte.
+      </p>
+      <div class="table-responsive">
+        <table class="table table-hover table-light">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Tour</th>
+              <th scope="col">Buffet</th>
+              <th scope="col">Bolos</th>
+              <th scope="col">Billar</th>
+              <th scope="col">Spa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Penthouse</th>
+              <td>$50 USD</td>
+              <td>$50 USD</td>
+              <td>FREE</td>
+              <td>FREE</td>
+              <td>$20 USD</td>
+            </tr>
+            <tr>
+              <th scope="row">Premium</th>
+              <td>$50 USD</td>
+              <td>$50 USD</td>
+              <td>$20 USD</td>
+              <td>FREE</td>
+              <td>$20 USD</td>
+            </tr>
+            <tr>
+              <th scope="row">Junior</th>
+              <td>$50 USD</td>
+              <td>$50 USD</td>
+              <td>$35 USD</td>
+              <td>FREE</td>
+              <td>$20 USD</td>
+            </tr>
+            <tr>
+              <th scope="row">Doble</th>
+              <td>$100 USD</td>
+              <td>$250 USD</td>
+              <td>$30 USD</td>
+              <td>$30 USD</td>
+              <td>$40 USD</td>
+            </tr>
+            <tr>
+              <th scope="row">Sencilla</th>
+              <td>$100 USD</td>
+              <td>$250 USD</td>
+              <td>$30 USD</td>
+              <td>$30 USD</td>
+              <td>$40 USD</td>
+            </tr>
+            <tr>
+              <th scope="row">Visitantes</th>
+              <td>$160 USD</td>
+              <td>NOT AVAILABLE</td>
+              <td>$50 USD</td>
+              <td>$50 USD</td>
+              <td>$65 USD</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="container1">
+        <br>
+
+        <div class="container bg-light" id="room" >
+          <h>Reglas de Tourista</h>
+          <p style="color: #000; padding: 10px; font-size: small;" >
+          Si quieres salir pero no sabes que hacer nosotros te tenemos varios guias de tourismo, todos
+          los dias de la semana estaremos esperandote en el lobby del hotel a las 8 am cada dia tenemos 
+          un lugar distinto que visitar. Reserva tu salida con nosotros, pero atencion por comodidad de 
+          todos nuestros huespedes y turistas debes sabes algunas reglas antes de viajar por la ciudad con nosotros:
+
+          Salida a las 8 am despues del desayuno, Todo niño debe tener un adulto, no se permiten las mascotas 
+          en los buses, el hotel no se hace cargo por ninguna perdida material, el guia da la hora de la salida,
+          es responsabilidad del adulto estar a la hora indicada. Los almuerzos no estan incluidos durante el tour.
+        </p>
+        </div>
+
+
+        <br>
+        <div class="container bg-light" id="room" >
+          
+          <div class="row">
+
+              <div class="col">
+
+                  <div class="container bg-light text-black ">
+                      <br>
+                      <h style="font-size: 45px;">Bogota</h><br>
+                      <hr class="my-4">
+                      <p>
+                      La capital de colombia tiene muchos lugares para conocer.
+                      te llevaremos al museo del oro, este lugar es muy importante por preservar las
+                      colecciones arqueologicas de colombia, al teatro faenza, escenario
+                      de eventocs culturales desde 1924. iremos por los 7 km del 
+                      sendero ecologico. iremos al cerro de monserrate y tambien conoceras en nuestros
+                      tours la plaza bolivar. Todos estos lugares son aptos para niños
+                      <br>
+                      <br>
+                      </p>
+                  </div>
+
+              </div>
+
+              <br>  
+
+              <div class="col-sm-7">
+
+                  <div id="carouselExampleControlsbog" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="images/bogo (1).jpg" class="d-block w-100" alt="holaaa">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="images/bogo (2).jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="images/bogo (3).jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/bogo (4).jpeg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsbog" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsbog" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                  </div>
+              </div>
+
+          </div>
+        </div>
+      
+        <br>
+        <br>
+      
+        <div class="container bg-light" id="room">
+        
+            <div class="row">
+            
+                <div class="col-sm-7">
+                
+                    <div id="carouselExampleControlscali" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/cali (1).jpg" class="d-block w-100" alt="holaaa">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/cali (2).jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/cali (3).jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/cali (4).jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlscali" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlscali" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                  
+                </div>
+              
+              
+                    <div class="col">
+                        <div class="container bg-light text-black">
+                            <br>
+                            <h style="font-size: 45px">Cali <br></h>
+                            <hr class="my-4">
+                            <p>
+                            Cali tiene muchos lugares para conocer como por ejemplo el humedal que cumple la funcion de preservar la vida
+                            de la fauna y flora en cali. la iglesia Ermita es un templo catolico creado en el mismo lugar en el que se destruyó
+                            la capilla de 1602 por un terremoto,  el zooologico de cali es ideal para las personas a las que les gusta los animales
+                            patrimonio natural y cultural del amor por la vida. te gusta la salsa? pues te invitamos al festuval de la salsa en Cali.
+                            y si no sabe bailar, tranquilo, en nuestro hotel tambien damos clases de salsa!
+                            </p>
+                          
+                        </div>
+                    </div>
+            </div>
+        </div>
+      
+        <br>
+        <br>
+      
+        <div class="container bg-light" id="room">
+        
+            <div class="row">
+            
+                <div class="col">
+                    <div class="container bg-light text-black">
+                        <br>
+                        <h style="font-size: 50px">Medellin</h><br>
+                        <hr class="my-4">
+                        <p>
+                        Te han dicho que a los paisas les encantan las visitas, que tal conocer el pueblito paisa, este es un mirador
+                        lleno de artesanias y gastronomia que guarda la memoria antioqueña, visitaremos la comuna 13 en donde se acoje
+                        con amabilidad cada turista, alli hay escalera electricas. el pequeño teatro son dos salas que operan simultaneamente 
+                        en el epicentreo central del teatro, patrimonio cultural. de noche iremos al parque lleras,ubicado en el poblado,
+                        aqui no está permitido llevar niños.
+                        <br>
+                        <br>
+                        </p>
+                     
+                      </div>
+                    
+                  </div>
+
+                <div class="col-sm-7">
+                    <div id="carouselExampleControlsmed" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/med (1).jpg" class="d-block w-100" alt="holaaa">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/med (2).jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/med (3).jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/med (4).jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="images/med (5).jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsmed" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsmed" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                </div>
+              
+            </div>
+
+
+        </div>
+      
+        <br>
+        <br>
+      
+        <div class="container bg-light" id="room">
+        
+            <div class="row">
+            
+                <div class="col-sm-7">
+                    <div id="carouselExampleControlsguat" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/guat (1).jpg" class="d-block w-100" alt="holaaa">
+                            </div>
+                            <div class="carousel-item active">
+                              <img src="images/guat (2).jpg" class="d-block w-100" alt="holaaa">
+                            </div>
+                            <div class="carousel-item active">
+                              <img src="images/guat (3).jpg" class="d-block w-100" alt="holaaa">
+                            </div>
+                            <div class="carousel-item active">
+                              <img src="images/guat (4).jpg" class="d-block w-100" alt="holaaa">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsguat" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsguat" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                </div>
+              
+              
+                <div class="col">
+                    <div class="container gb-light text-black">
+                    
+                        <br>
+                    <h style="font-size: 48px;">Guatape</h>
+                    <hr class="my-4">
+                    <p>
+                      Aunque guatape sea un lugar pequeño aun hay muchas cosas que hacer subiremos la piedra del peñol en donde tendras una magnifica vista
+                      de toda la montaña y la represa, tambien estan disponibles los paseos en barco una de las actividades nauticas mas importatntes de guatape.
+                      si quieres tambien podemos dar un paseo en helicopetero o en parapente desde arriba veras todo el paisaje simpre acompañado en cualquiera de las dos por un
+                      piloto especializado.
+                    
+                    <br>
+                    <br>
+                    </p>
+                  
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container bg-light" id="room">
+        
+          <div class="row">
+          
+              <div class="col">
+                  <div class="container bg-light text-black">
+                      <br>
+                      <h style="font-size: 50px">San Andres</h><br>
+                      <hr class="my-4">
+                      <p>
+                      Te alquilamos tu propio carrito cada uno para 4 personas para que le des una vuelta a la isla tu mismo, tambien entraremos a la cueva de morgan. Si te gusta bucear,
+                      este es tu lugar iremos a bucear a la barrera de coral, sabias que san andres tiene la tercerca battera de coral mas grande del mundo? aqui no se permiten niños. iremos 
+                      a la isla de jhonny cay en bote y tambien conoceremos el acuario es un lugar ehermoso para ir en familia. en la noche hay fiesta en barco.
+                      <br>
+                      <br>
+                      </p>
+                   
+                    </div>
+                  
+                </div>
+
+              <div class="col-sm-7">
+                  <div id="carouselExampleControlsan" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="images/san (1).jpg" class="d-block w-100" alt="holaaa">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="images/san (2).jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="images/san (3).jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/san (4).jpg" class="d-block w-100" alt="...">
+                          </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsan" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsan" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                  </div>
+              </div>
+            
+          </div>
+
+
+      </div>
+    
+      <br>
+      <br>
+    
+      <div class="container bg-light" id="room">
+      
+          <div class="row">
+          
+              <div class="col-sm-7">
+                  <div id="carouselExampleControls3cartagena" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="images/carta (1).jpg" class="d-block w-100" alt="holaaa">
+                          </div>
+                          <div class="carousel-item active">
+                            <img src="images/carta (2).jpg" class="d-block w-100" alt="holaaa">
+                          </div>
+                          <div class="carousel-item active">
+                            <img src="images/carta (3).jpg" class="d-block w-100" alt="holaaa">
+                          </div>
+                          <div class="carousel-item active">
+                            <img src="images/carta (4).jpg" class="d-block w-100" alt="holaaa">
+                          </div>
+
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3cartagena" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3cartagena" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                  </div>
+              </div>
+            
+            
+              <div class="col">
+                  <div class="container gb-light text-black">
+                  
+                      <br>
+                  <h style="font-size: 48px;">Cartagena</h>
+                  <hr class="my-4">
+                  <p>
+                    Seguro has oido hablar de cartagena una de las ciudades mas turisiticas de colombia. Iremos al pacio de la iniquicision aqui dictaban juicios e interrogatorios a los erejes. la muralla de cartagena
+                    esta fortificacion tardo en constrirse mas de 100 años desde 1586 desde donde saqueaban riquezas. luego tenemos el castillo de san felipe levantado en el sigo XVII tambien iremos a la isla baru, el 
+                    archipielago de san bernardo, las islas del rosario y claramente a la hermosa ciudad amurallada de noche.
+                  </p>
+                
+                
+                </div>
+              </div>
+          </div>
+      </div>
+      <br>
+      <br>
+      <div class="container bg-light text-black" id="room">
+        <h style="font-size: 30px;">Horarios</h><br>
+                <hr class="my-4">
+                <div class="row">
+                  <div class="col">
+                    <h6>Piscina</h5><p>7am - 8pm</p>
+                      <h6>Buffet</h5><p>Desayuno 7am. almuerzo 12m. cena 7pm</p>
+                      <h6>Bolos</h5><p>2pm - 10pm</p>
+                      <h6>Billar</h5><p>2pm - 10pm</p>
+                  </div>
+                  <div class="col">
+                    <h6>Spa</h5><p>9am - 6pm</p>
+                    <h6>Gym</h5><p>5am - 10pm</p>
+                    <h6>Guarderia animal</h5><p>6am - 8pm</p>
+                    <h6>Sala de trabajo</h5><p>24 H</p>
+                  </div>
+                </div>
+      <br>
+      </div>
+      </div>
+
+      <h style="color: black;"><br>SERVICIOS INCLUIDOS</h>
+      <p style="color: black;">Estos son los servicios que son exclusivamente para los huespedes de nuestro hotel.
+        Por lo que no tienen nigun costo adicional. No esta permitada la entrada de visitantes.
+      </p>
+
+      <div class="table-responsive">
+        <table class="table table-hover table-light">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Piscina</th>
+              <th scope="col">Gimnasio</th>
+              <th scope="col">Sala Trabajo</th>
+              <th scope="col">Guarderia animal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Cost</th>
+              <td>FREE</td>
+              <td>FREE</td>
+              <td>FREE</td>
+              <td>FREE</td>
+            </tr>
+          </tbody>
+        </table>
+      
+      <br>
+      
+      <!-- INSTALACIONES -->
+      
+      <div class="container-fluid">
+      
+          <div id="carouselExampleControlsf" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="images/instalaciones.restaurante.jpg" class="d-block w-100" alt="holaaa">
+
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/instalaciones.piscina.jpg" class="d-block w-100" alt="hh">
+
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/instalaciones.spa.jpg" class="d-block w-100" alt="...">
+
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/instalaciones.billar.jpg" class="d-block w-100" alt="...">
+
+                  </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsf" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsf" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+
+  </div>
+  <div class="tab-pane" id="membresias" role="tabpanel" aria-labelledby="membresias-tab">
+
+    <div class="accordion" id="accordionSocios">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background-color: #000; color: #fff;">
+            Membresia Mimosa Black
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionSocios" style="padding: 40px;">
+          <div class="accordion-body">
+            <strong>Membresia con penthouse.</strong> Comprando esta membresia podras elegir uno de nuestros penthouse y tendras derecho a 4 semanas durante todo el año.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: gray; color: #000;">
+            Membresia Mimosa Senior
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSocios" style="padding: 40px;">
+          <div class="accordion-body">
+            <strong >Membresia habitacion Premium.</strong> Comprando esta membresia podras elegir una de nuestras habitaciones premium y tendras derecho a 4 semanas durante todo el año.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color: #fff; color: #000;">
+            Membresia Mimosa Junior
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSocios" style="padding: 40px;">
+          <div class="accordion-body">
+            <strong>Membresia con habitacion junior.</strong> Comprando esta membresia podras elegir una de nuestras habitaciones junior y tendras derecho a 4 semanas durante todo el año.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      </article>
+    </main>   
+    
+    <!-- FOOTER -->
+    <div class="container1">
+      <footer>
+        <br>
+        <div class="container-fluid py-4 bg-light">
+          <div class="row">
+              <div class="col-lg-5 col-md-2  d-flex flex-column">
+                  <h5 class="h1 text-dark ">Contact.</h5>
+                  <p class="small text-muted mb-0 "> Puedes contactarnos en los siguientes enlaces y paginas.</p>
+                  <p class="small text-muted mb-0 ">&copy; Copyrights. All rights reserved.</p>
+              </div>
+
+              <div class="col-lg-3 col-md-4 d-flex flex-column">
+                  <h5 class="text-dark mb-3 ">Quick links</h5>
+                  <ul class="list-unstyled text-muted ">
+                    <li>
+                      <div style="display: flex">
+                        <i class="fa-brands fa-facebook"></i>
+                        <a style="margin-left: 10px;" href="https://www.facebook.com/misas.paula/">Facebook</a>
+                      </div>
+                  </li>
+                      <li>
+                          <div style="display: flex">
+                            <i class="fa-brands fa-twitter"></i>
+                            <a style="margin-left: 10px;" href="">Twitter</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div style="display: flex">
+                            <i class="fa-solid fa-mobile"> </i>
+                            <p class="small" style="margin-left: 10px;">+57 3177445499</p>
+                          </div>
+                      </li>
+                      <li>
+                        <div style="display: flex">
+                          <i class="fa-solid fa-envelope"></i>
+                          <a style="margin-left: 10px" href="pmisas@unaledu.co">pmisas@unal.edu.co</a>
+                        </div>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-4 col-md-6  d-flex flex-column text-left">
+                  <h5 class="text-dark mb-3 ">Newsletter</h5>
+                  <p class="small text text-muted">Terminos y condiciones</p>
+                  <p class="small text-muted">Deja tu correo y nos pondremos en contacto.</p>
+                  <form action="# ">
+                      <div class="input-group mb-3 ">
+                          <input class="form-control " type="text " placeholder="@" aria-label="Recipient's username " aria-describedby="button-addon2 ">
+                          <button class="btn btn-primary " id="button-addon2 " type="button "><i class="fas fa-paper-plane "></i></button>
+                      </div>
+                  </form>
+                </div>
+            </div>
+          </div>
+          <br>
+      </div>
+      </footer>
+    </div>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- endbuild -->
+    
+  </body>
+</html>
